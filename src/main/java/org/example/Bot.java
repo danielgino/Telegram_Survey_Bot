@@ -340,7 +340,7 @@ public class Bot extends TelegramLongPollingBot {
         keyboardMarkup.setKeyboard(keyboard);
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
-        message.setReplyMarkup(keyboardMarkup);  // הגדרת המקלדת החדשה בהודעה
+        message.setReplyMarkup(keyboardMarkup);
         message.setText(CHOSE_NUM_OF_QUESTIONS_MESSAGE);
 
         try {
